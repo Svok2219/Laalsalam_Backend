@@ -3,7 +3,7 @@ const Router = express.Router();
 const {BGroups} = require('../Model/BloodGroup')
 
 
-Router.get('/', async (req,res)=>{
+Router.get('/getBloodGroups', async (req,res)=>{
     const BloodGrps = await BGroups.find()
     if(!BloodGrps){
     res.status(500).json({success:false})}

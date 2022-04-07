@@ -3,7 +3,7 @@ const Router = express.Router();
 const {Cities} = require('../Model/City')
 
 
-Router.get('/', async (req,res)=>{
+Router.get('/getCityList', async (req,res)=>{
     const Cities = await Cities.find()
     if(!Cities){
     res.status(500).json({success:false})}
