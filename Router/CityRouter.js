@@ -4,10 +4,10 @@ const {Cities} = require('../Model/City')
 
 
 Router.get('/getCityList', async (req,res)=>{
-    const Cities = await Cities.find()
-    if(!Cities){
+    const cities = await Cities.find()
+    if(!cities){
     res.status(500).json({success:false})}
-    res.send(Cities);
+    res.send(cities);
 })
 
 
