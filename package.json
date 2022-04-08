@@ -15,7 +15,10 @@
     "express": "^4.17.3",
     "mongodb": "^4.5.0",
     "mongoose": "^6.2.10",
-    "morgan": "^1.10.0",
+    "morgan": "^1.10.0"
+   
+  },
+  "devDependencies": {
     "nodemon": "^2.0.15"
   }
 }
