@@ -37,7 +37,7 @@ res.send("Jayy Mahakaaal")
 
 
 //Database
-mongoose.connect(process.env.CONNECTION_STRING , {
+mongoose.connect("mongodb+srv://BB_USER:entered2022@cluster0.geudk.mongodb.net/RedDataBase?retryWrites=true&w=majority" , {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     dbName: 'RedDataBase'
