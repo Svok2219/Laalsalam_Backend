@@ -35,8 +35,9 @@ app.get("/",(req,res)=>{
 res.send("Jayy Mahakaaal")
 })
 
-
+// console.log(process.env.DB_USER)
 //Database
+mongoose.set('strictQuery', false)
 mongoose.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.geudk.mongodb.net/RedDataBase?retryWrites=true&w=majority` , {
     useNewUrlParser: true,
     useUnifiedTopology: true,
